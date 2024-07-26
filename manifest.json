@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "Service-Team Email Extension",
+  "version": "1.0.1",
+  "description": "Adds a utility to WorkEver to allow quick sending of emails to customers",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false 
+  },
+  "icons": {
+    "180": "apple-touch-icon.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{7a2c5f09-ec2d-4fd5-a4d7-2e3e0b92a2f2}"
+    }
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage",
+    "https://*.mailjet.com/*",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "browser_action": {
+    "default_title": "STE",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://gatetrading.workever.app/jobs/view/*"
+      ],
+      "js": [
+        "pullData.js"
+      ]
+    }
+  ]
+}

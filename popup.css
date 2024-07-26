@@ -1,0 +1,149 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    color: rgb(119, 119, 119);
+    font-family: "Lato", sans-serif;
+    width: 800px; 
+    height: max-content;
+    overflow: hidden;
+    display: flex; 
+    flex-direction: column; 
+}
+
+h2 {
+    text-align: center;
+}
+
+button {
+    display: block;
+    width:150px;
+    margin-left: auto;
+    margin-right: 0;
+    background-color: rgb(63, 195, 63);
+    color: rgb(255, 255, 255);
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid rgb(31, 127, 31);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+button:hover {
+    background-color: rgb(32, 100, 32);
+}
+
+img {
+    display: block;
+    width: 50px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+hr {
+    border: 1px solid rgb(213, 213, 213);
+}
+
+
+
+.email-content {
+    font-size: small;
+    display: block;
+    white-space: no-wrap; 
+    max-width: 100%; 
+    line-height: 1.2;
+    font-size: 10;
+    height: auto;
+    max-height: 320px;
+    overflow-y: auto;
+    padding-right: 15px;
+    
+}
+
+.container {
+    display: block;
+    transition: max-height .25s ease-in-out;
+    width: 85%; 
+    max-width: 90%; 
+    overflow: hidden; 
+    margin-bottom: 10px;
+    margin-left: auto; 
+    margin-right: auto; 
+    flex: 1; /* Take remaining space */
+    
+}
+
+.container.hidden {
+    max-height: 0px;
+    overflow: hidden;
+}
+
+.row {
+    display: flexbox;
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.row > label {
+    flex: 1;
+}
+
+.row > input {
+    flex: 2;
+    margin-top: 5px; 
+}
+
+.row > input.hidden {
+    display: none;
+}
+
+#sending {
+    text-align: center;
+}
+
+.status {
+    margin-top: 5px;
+    transition: all .5s ease-in-out;
+    transform: rotate(0deg);
+    opacity: 1;
+}
+
+.status.hidden {
+    transform: rotate(360deg);
+    opacity: 0;
+}
+
+.icon {
+    display: block;
+}
+
+.icon.hidden {
+    display: none;
+}
+
+#email {
+    padding: 3px;
+    border-radius: 15px; /* Make the corners rounded */
+    
+    width:60%; /* Ensure it takes full width available */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    border: 1px solid #ccc; /* Add a border */
+}
+/* Centering the button */
+.button-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 10px; /* Add some space on top */
+}
+
+#emailSecret{
+    padding: 3px;
+    border-radius: 15px; /* Make the corners rounded */
+    
+    width:50%; /* Ensure it takes full width available */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    border: 1px solid #ccc; /* Add a border */
+}

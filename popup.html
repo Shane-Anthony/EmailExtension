@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="popup.css"/>
+    <title>WEPG popup</title>
+</head>
+<body>
+    <img src="Serviceteam.jpg" />
+    <h2 id="title">Invalid Page</h2>
+    <div class="container hidden" id="main">
+        <div class="row">
+            <label>Email:</label> <input id="email" type="text"/>
+        </div>
+		<hr>
+        <div class="email-content">
+            <div id="emailContent"></div> 
+        </div>
+        <hr>
+        <div class="button-container">
+            <button id="sendEmailButton">Send Email</button>
+        </div>
+        <div class="row">
+            
+            <input type="text" class="hidden" id="emailSecret" placeholder="Please set API Secret" value="">
+        </div>
+        
+    </div>
+   
+    <script src="popup.js"></script>
+</body>
+</html>
