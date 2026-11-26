@@ -85,7 +85,7 @@ function sendJobToEmail(job) {
     
     const pgNumber = job.do_number;
     
-    const mailjetAPIKey = '94367b93f3c842778208f721327e5d68';
+    const mailjetAPIKey = '[hidden]';
     const mailjetAPISecret = document.getElementById("emailSecret").value;
      if (mailjetAPISecret === undefined || mailjetAPISecret === "" || mailjetAPISecret === "undefined") {
         showEmailSecretField();
@@ -100,7 +100,7 @@ function sendJobToEmail(job) {
     // Send message to background script
     const message = {
         type: "sendJobToEmail",
-        mailjetAPIKey: '94367b93f3c842778208f721327e5d68',
+        mailjetAPIKey: '[hidden]',
         mailjetAPISecret: mailjetAPISecret,
         toEmail: email,
         subject: subject,
